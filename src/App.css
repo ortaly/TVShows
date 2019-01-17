@@ -1,0 +1,36 @@
+article{
+    display: inline-block;
+    margin: 10px;
+}
+
+header {
+    padding: 13px 40px;
+}
+
+.card {
+    background-color: #1f4b47;
+    border-bottom: solid 3px #3C948B;
+    position: relative;
+    padding: 3px;
+}
+
+.title {
+    display: inline-block;
+}
+
+
+
+.card a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+input {
+    height: 39px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+}
