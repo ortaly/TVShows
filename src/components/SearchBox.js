@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 
 export default class SearchBox extends Component {
   
-  render() {
-    const {handleInputChange} = this.props;
+  //prevent copy function on each render
+  onTypeName = (e) => {
+    this.props.handleInputChange(e.target.value)
+  }
 
+  render() {
     return (
       <form>
         <input
           placeholder="Search Shows"
           ref={input => this.search = input}
-          onChange={(e) => handleInputChange(e.target.value)}
+          onChange={(e) => this.onTypeName(e)}
         />
       </form>
     )
