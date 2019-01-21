@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import '../App.css';
 import Card from './Card';
 
-export default function ShowCards(props) {
-    const showsElements = props.showsList.map((e) => {
-        return Card(e);
+ const ShowCards = (props) => {
+    const showsElements = props.showsList.map((show) => {
+        return <Card cardData={show}/>;
     });
 
     return <ul>{showsElements}</ul>;
 }
+
+export default ShowCards;
